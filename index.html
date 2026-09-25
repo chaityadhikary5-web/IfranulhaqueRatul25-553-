@@ -1,1214 +1,443 @@
-/* ===============================
-   ROOT
-================================ */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Md. Ifranul Haque Ratul | Academic Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">IR.</a>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#research">Research</a>
+                <a href="#skills">Skills</a>
+                <a href="#vision">Vision</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-:root {
-    --navy: #172b3a;
-    --navy-light: #27485a;
 
-    --ivory: #faf7f0;
-    --cream: #f2eadf;
+    <!-- HERO -->
+    <section class="hero" id="home">
 
-    --terracotta: #b66f58;
-    --terracotta-light: #e6c5b8;
+        <div class="hero-text">
+            <p class="eyebrow">
+                SOCIAL SCIENCE EDUCATION · IER · UNIVERSITY OF DHAKA
+            </p>
 
-    --blue: #8faebe;
-    --blue-light: #dce8ed;
+            <h1>
+                Md. Ifranul<br>
+                <span>Haque Ratul</span>
+            </h1>
 
-    --text: #29343b;
-    --muted: #6d767b;
+            <p class="hero-description">
+                Education student with an academic interest in Social
+                Science Education, teaching and learning, curriculum,
+                assessment and educational research.
+            </p>
 
-    --white: #ffffff;
-    --border: #ddd6cd;
+            <div class="hero-buttons">
+                <a href="#education" class="btn primary-btn">
+                    Explore My Journey
+                </a>
 
-    --shadow: 0 18px 45px rgba(23, 43, 58, 0.10);
-}
+                <a href="#contact" class="btn secondary-btn">
+                    Contact
+                </a>
+            </div>
+        </div>
 
 
-/* ===============================
-   RESET
-================================ */
+        <!-- PHOTO -->
+        <div class="hero-photo">
+            <div class="photo-frame">
+                <img src="profile.jpg" alt="Md. Ifranul Haque Ratul">
+            </div>
+        </div>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    </section>
 
-html {
-    scroll-behavior: smooth;
-}
 
-body {
-    font-family: "DM Sans", sans-serif;
-    background: var(--ivory);
-    color: var(--text);
-    line-height: 1.7;
-}
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+        <div class="section-heading">
+            <span>01</span>
+            <h2>About Me</h2>
+        </div>
 
-img {
-    max-width: 100%;
-    display: block;
-}
+        <div class="about-content">
+            <p class="large-text">
+                I am a student of the Institute of Education and Research
+                (IER), University of Dhaka, with a particular academic
+                focus on Social Science Education.
+            </p>
 
+            <p>
+                My academic interests include teaching and learning,
+                classroom practices, curriculum and educational
+                assessment. I am interested in understanding educational
+                challenges through research and evidence-based approaches.
+            </p>
+        </div>
 
-/* ===============================
-   NAVBAR
-================================ */
+    </section>
 
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
-    background: rgba(250, 247, 240, 0.95);
-    backdrop-filter: blur(12px);
+    <!-- ACADEMIC IDENTITY -->
+    <section class="identity-section">
 
-    border-bottom: 1px solid var(--border);
-}
+        <div class="identity-card">
 
-.nav-container {
-    max-width: 1180px;
-    margin: auto;
+            <p class="card-label">ACADEMIC IDENTITY</p>
 
-    padding: 18px 30px;
+            <h2>
+                Education as a bridge between knowledge and society.
+            </h2>
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+            <p>
+                Exploring education not only as a process of learning,
+                but also as a way of understanding society and creating
+                meaningful educational change.
+            </p>
 
-.logo {
-    font-family: "Playfair Display", serif;
+        </div>
 
-    font-size: 28px;
-    font-weight: 700;
+    </section>
 
-    color: var(--navy);
-}
 
-.nav-links {
-    display: flex;
-    gap: 28px;
-}
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
 
-.nav-links a {
-    font-size: 13px;
-    font-weight: 600;
+        <div class="section-heading">
+            <span>02</span>
+            <h2>Education</h2>
+        </div>
 
-    color: var(--muted);
+        <div class="education-timeline">
 
-    transition: 0.3s;
-}
+            <div class="education-item">
 
-.nav-links a:hover {
-    color: var(--terracotta);
-}
+                <div class="education-year">
+                    2020–2021
+                </div>
 
+                <div class="education-card">
 
-/* ===============================
-   HERO
-================================ */
+                    <p class="education-level">HONOURS</p>
 
-.hero {
-    max-width: 1180px;
-    margin: auto;
+                    <h3>
+                        Institute of Education and Research
+                    </h3>
 
-    min-height: 720px;
+                    <p>
+                        University of Dhaka
+                    </p>
 
-    padding: 90px 30px;
+                    <p class="education-detail">
+                        Honours in Education with an academic focus on
+                        Social Science Education.
+                    </p>
 
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+                </div>
 
-    align-items: center;
+            </div>
 
-    gap: 80px;
-}
 
-.eyebrow {
-    color: var(--terracotta);
+            <div class="education-item">
 
-    font-size: 12px;
-    font-weight: 700;
+                <div class="education-year">
+                    2020
+                </div>
 
-    letter-spacing: 3px;
+                <div class="education-card">
 
-    margin-bottom: 22px;
-}
+                    <p class="education-level">
+                        HIGHER SECONDARY CERTIFICATE
+                    </p>
 
-.hero h1 {
-    font-family: "Playfair Display", serif;
+                    <h3>HSC</h3>
 
-    font-size: clamp(52px, 7vw, 88px);
+                    <p>Dhaka Board · Commerce</p>
 
-    line-height: 0.98;
+                    <p class="result">GPA 5.00</p>
 
-    color: var(--navy);
+                </div>
 
-    margin-bottom: 28px;
-}
+            </div>
 
-.hero h1 span {
-    color: var(--terracotta);
-}
 
-.hero-title {
-    font-size: 20px;
-    font-weight: 600;
+            <div class="education-item">
 
-    color: var(--navy-light);
+                <div class="education-year">
+                    2017
+                </div>
 
-    margin-bottom: 18px;
-}
+                <div class="education-card">
 
-.hero-text {
-    max-width: 620px;
+                    <p class="education-level">
+                        SECONDARY SCHOOL CERTIFICATE
+                    </p>
 
-    color: var(--muted);
+                    <h3>SSC</h3>
 
-    font-size: 16px;
+                    <p>Dhaka Board · Science</p>
 
-    margin-bottom: 35px;
-}
+                    <p class="result">GPA 5.00</p>
 
-.hero-buttons {
-    display: flex;
-    gap: 14px;
+                </div>
 
-    flex-wrap: wrap;
-}
+            </div>
 
-.btn {
-    display: inline-block;
+        </div>
 
-    padding: 13px 24px;
+    </section>
 
-    border-radius: 5px;
 
-    font-size: 13px;
-    font-weight: 700;
+    <!-- RESEARCH -->
+    <section class="section research-section" id="research">
 
-    transition: 0.3s;
-}
+        <div class="section-heading">
+            <span>03</span>
+            <h2>Research Interests</h2>
+        </div>
 
-.primary-btn {
-    background: var(--navy);
-    color: white;
-}
+        <p class="section-intro">
+            Areas of education and research that I am interested in
+            exploring academically.
+        </p>
 
-.primary-btn:hover {
-    background: var(--terracotta);
-    transform: translateY(-2px);
-}
+        <div class="research-grid">
 
-.secondary-btn {
-    border: 1px solid var(--navy);
-    color: var(--navy);
-}
+            <div class="research-card">
+                <span>01</span>
+                <h3>Social Science Education</h3>
+                <p>
+                    Exploring effective approaches to teaching and
+                    learning social science.
+                </p>
+            </div>
 
-.secondary-btn:hover {
-    background: var(--navy);
-    color: white;
-}
+            <div class="research-card">
+                <span>02</span>
+                <h3>Teaching & Learning</h3>
+                <p>
+                    Understanding classroom practices and student
+                    learning experiences.
+                </p>
+            </div>
 
+            <div class="research-card">
+                <span>03</span>
+                <h3>Curriculum & Instruction</h3>
+                <p>
+                    Exploring curriculum development and instructional
+                    approaches.
+                </p>
+            </div>
 
-/* ===============================
-   HERO PHOTO
-================================ */
+            <div class="research-card">
+                <span>04</span>
+                <h3>Educational Assessment</h3>
+                <p>
+                    Understanding assessment practices and their role
+                    in improving learning.
+                </p>
+            </div>
 
-.hero-photo {
-    position: relative;
+            <div class="research-card">
+                <span>05</span>
+                <h3>Inclusive Education</h3>
+                <p>
+                    Exploring educational approaches that support
+                    diverse learners.
+                </p>
+            </div>
 
-    display: flex;
-    justify-content: center;
-}
+            <div class="research-card">
+                <span>06</span>
+                <h3>Classroom Practices</h3>
+                <p>
+                    Examining classroom interaction, participation
+                    and learning environments.
+                </p>
+            </div>
 
-.photo-frame {
-    width: 350px;
-    height: 450px;
+        </div>
 
-    background: var(--blue-light);
+    </section>
 
-    padding: 14px;
 
-    border-radius: 170px 170px 12px 12px;
+    <!-- ACADEMIC STATEMENT -->
+    <section class="statement-section">
 
-    box-shadow: var(--shadow);
-}
+        <div class="statement-inner">
 
-.photo-frame img {
-    width: 100%;
-    height: 100%;
+            <p>ACADEMIC STATEMENT</p>
 
-    object-fit: cover;
+            <h2>
+                Education is not only about what we learn,
+                but also about how we understand the world.
+            </h2>
 
-    border-radius: 155px 155px 8px 8px;
-}
+        </div>
 
-.photo-note {
-    position: absolute;
+    </section>
 
-    bottom: -25px;
-    right: 10px;
 
-    background: var(--navy);
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
 
-    color: white;
+        <div class="section-heading">
+            <span>04</span>
+            <h2>Skills</h2>
+        </div>
 
-    padding: 18px 24px;
+        <div class="skills-layout">
 
-    min-width: 210px;
+            <div class="skill-column">
 
-    box-shadow: var(--shadow);
-}
+                <h3>Research & Academic</h3>
 
-.photo-note strong {
-    display: block;
+                <div class="skill-tags">
+                    <span>Research Methodology</span>
+                    <span>Research Design</span>
+                    <span>Literature Review</span>
+                    <span>Data Collection</span>
+                    <span>Qualitative Research</span>
+                    <span>Quantitative Research</span>
+                    <span>Academic Writing</span>
+                    <span>Critical Analysis</span>
+                </div>
 
-    font-family: "Playfair Display", serif;
+            </div>
 
-    font-size: 20px;
-}
 
-.photo-note span {
-    font-size: 11px;
+            <div class="skill-column">
 
-    color: #dce5e8;
-}
+                <h3>Professional</h3>
 
+                <div class="skill-tags">
+                    <span>Communication</span>
+                    <span>Presentation</span>
+                    <span>Public Speaking</span>
+                    <span>Teamwork</span>
+                    <span>Microsoft Office</span>
+                    <span>Academic Documentation</span>
+                </div>
 
-/* ===============================
-   GENERAL SECTION
-================================ */
+            </div>
 
-.section {
-    max-width: 1180px;
+        </div>
 
-    margin: auto;
+    </section>
 
-    padding: 105px 30px;
-}
 
-.section-label {
-    font-size: 11px;
-    font-weight: 700;
+    <!-- VISION -->
+    <section class="section vision-section" id="vision">
 
-    letter-spacing: 3px;
+        <div class="vision-box">
 
-    color: var(--terracotta);
+            <div class="vision-number">
+                05
+            </div>
 
-    margin-bottom: 25px;
-}
+            <div class="vision-content">
 
-.section-heading {
-    max-width: 700px;
+                <p class="eyebrow">FUTURE VISION</p>
 
-    margin-bottom: 55px;
-}
+                <h2>
+                    Learning today. Contributing to education tomorrow.
+                </h2>
 
-.section-heading h2 {
-    font-family: "Playfair Display", serif;
+                <p>
+                    My goal is to build strong academic and professional
+                    expertise in education and research, understand
+                    educational challenges and opportunities, and
+                    contribute to meaningful educational initiatives
+                    through evidence-based approaches.
+                </p>
 
-    color: var(--navy);
+            </div>
 
-    font-size: clamp(38px, 5vw, 58px);
+        </div>
 
-    line-height: 1.1;
+    </section>
 
-    margin-bottom: 18px;
-}
 
-.section-heading p {
-    color: var(--muted);
-}
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
 
+        <div class="section-heading">
+            <span>06</span>
+            <h2>Contact</h2>
+        </div>
 
-/* ===============================
-   ABOUT
-================================ */
+        <div class="contact-content">
 
-.about-section {
-    border-top: 1px solid var(--border);
-}
+            <div class="contact-intro">
 
-.about-layout {
-    display: grid;
+                <p class="eyebrow">GET IN TOUCH</p>
 
-    grid-template-columns: 0.9fr 1.1fr;
+                <h2>
+                    Let's connect through education,
+                    research and ideas.
+                </h2>
 
-    gap: 100px;
-}
+            </div>
 
-.about-title h2 {
-    font-family: "Playfair Display", serif;
 
-    font-size: clamp(38px, 5vw, 60px);
+            <div class="contact-details">
 
-    color: var(--navy);
+                <a href="mailto:imifranul@gmail.com">
+                    <span>Email</span>
+                    imifranul@gmail.com
+                </a>
 
-    line-height: 1.08;
-}
+                <a href="tel:01760803288">
+                    <span>Phone</span>
+                    01760803288
+                </a>
 
-.about-title span {
-    color: var(--terracotta);
-}
+                <div>
+                    <span>Location</span>
+                    Narsingdi, Bangladesh
+                </div>
 
-.about-text {
-    padding-top: 8px;
-}
+            </div>
 
-.about-text p {
-    color: var(--muted);
+        </div>
 
-    margin-bottom: 22px;
+    </section>
 
-    font-size: 16px;
-}
 
+    <!-- FOOTER -->
+    <footer class="footer">
 
-/* ===============================
-   IDENTITY
-================================ */
+        <div class="footer-logo">
+            IR.
+        </div>
 
-.identity-section {
-    background: var(--navy);
+        <p>
+            Md. Ifranul Haque Ratul · Academic Portfolio
+        </p>
 
-    color: white;
+        <p>
+            Institute of Education and Research · University of Dhaka
+        </p>
 
-    padding: 100px 30px;
-}
+    </footer>
 
-.identity-container {
-    max-width: 1180px;
-
-    margin: auto;
-}
-
-.identity-intro {
-    max-width: 700px;
-
-    margin-bottom: 60px;
-}
-
-.identity-intro span {
-    font-size: 11px;
-
-    letter-spacing: 3px;
-
-    font-weight: 700;
-
-    color: var(--blue);
-}
-
-.identity-intro h2 {
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(38px, 5vw, 58px);
-
-    line-height: 1.1;
-
-    margin-top: 18px;
-}
-
-.identity-intro em {
-    color: var(--terracotta-light);
-
-    font-style: normal;
-}
-
-.identity-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 22px;
-}
-
-.identity-card {
-    border: 1px solid rgba(255,255,255,0.15);
-
-    padding: 32px;
-
-    min-height: 240px;
-}
-
-.identity-number {
-    color: var(--terracotta-light);
-
-    font-weight: 700;
-
-    margin-bottom: 35px;
-}
-
-.identity-card h3 {
-    font-family: "Playfair Display", serif;
-
-    font-size: 23px;
-
-    margin-bottom: 13px;
-}
-
-.identity-card p {
-    color: #c9d2d6;
-
-    font-size: 14px;
-}
-
-
-/* ===============================
-   EDUCATION
-================================ */
-
-.education-section {
-    padding-bottom: 110px;
-}
-
-.education-timeline {
-    position: relative;
-
-    max-width: 900px;
-
-    margin-left: 20px;
-}
-
-.education-timeline::before {
-    content: "";
-
-    position: absolute;
-
-    left: 8px;
-    top: 10px;
-    bottom: 10px;
-
-    width: 1px;
-
-    background: var(--border);
-}
-
-.education-item {
-    position: relative;
-
-    padding-left: 55px;
-
-    margin-bottom: 35px;
-}
-
-.timeline-dot {
-    position: absolute;
-
-    left: 0;
-    top: 30px;
-
-    width: 17px;
-    height: 17px;
-
-    border-radius: 50%;
-
-    background: var(--terracotta);
-
-    border: 4px solid var(--ivory);
-
-    box-shadow: 0 0 0 1px var(--terracotta);
-}
-
-.education-card {
-    background: white;
-
-    border: 1px solid var(--border);
-
-    padding: 32px;
-
-    box-shadow: 0 8px 25px rgba(23, 43, 58, 0.05);
-}
-
-.education-card.featured {
-    border-left: 5px solid var(--terracotta);
-
-    box-shadow: var(--shadow);
-}
-
-.education-top {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    margin-bottom: 18px;
-}
-
-.education-year {
-    color: var(--terracotta);
-
-    font-weight: 700;
-
-    font-size: 13px;
-}
-
-.education-badge {
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-    color: var(--navy);
-
-    background: var(--blue-light);
-
-    padding: 6px 10px;
-}
-
-.education-card h3 {
-    font-family: "Playfair Display", serif;
-
-    color: var(--navy);
-
-    font-size: 26px;
-
-    margin-bottom: 4px;
-}
-
-.education-card h4 {
-    color: var(--navy-light);
-
-    font-size: 16px;
-
-    margin-bottom: 18px;
-}
-
-.degree {
-    font-weight: 700;
-
-    color: var(--terracotta);
-
-    margin-bottom: 8px;
-}
-
-.education-card p {
-    color: var(--muted);
-
-    font-size: 14px;
-
-    margin-bottom: 8px;
-}
-
-.result {
-    display: inline-block;
-
-    margin-top: 12px;
-
-    padding: 7px 13px;
-
-    background: var(--navy);
-
-    color: white;
-
-    font-size: 12px;
-
-    font-weight: 700;
-}
-
-
-/* ===============================
-   RESEARCH
-================================ */
-
-.research-section {
-    border-top: 1px solid var(--border);
-}
-
-.research-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
-}
-
-.research-card {
-    background: white;
-
-    border: 1px solid var(--border);
-
-    padding: 32px;
-
-    min-height: 245px;
-
-    transition: 0.3s;
-}
-
-.research-card:hover {
-    transform: translateY(-6px);
-
-    border-color: var(--terracotta);
-
-    box-shadow: var(--shadow);
-}
-
-.research-card > span {
-    color: var(--terracotta);
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-}
-
-.research-card h3 {
-    font-family: "Playfair Display", serif;
-
-    color: var(--navy);
-
-    font-size: 23px;
-
-    margin: 35px 0 12px;
-}
-
-.research-card p {
-    color: var(--muted);
-
-    font-size: 14px;
-}
-
-
-/* ===============================
-   STATEMENT
-================================ */
-
-.statement-section {
-    background: var(--cream);
-
-    padding: 100px 30px;
-}
-
-.statement-inner {
-    max-width: 900px;
-
-    margin: auto;
-
-    text-align: center;
-}
-
-.statement-inner > span {
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    font-weight: 700;
-
-    color: var(--terracotta);
-}
-
-.statement-inner h2 {
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(35px, 5vw, 55px);
-
-    color: var(--navy);
-
-    line-height: 1.2;
-
-    margin: 25px 0;
-}
-
-.statement-inner em {
-    color: var(--terracotta);
-
-    font-style: normal;
-}
-
-.statement-inner p {
-    max-width: 650px;
-
-    margin: auto;
-
-    color: var(--muted);
-}
-
-
-/* ===============================
-   PROJECTS
-================================ */
-
-.projects-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.project-card {
-    background: var(--navy);
-
-    color: white;
-
-    padding: 34px;
-
-    min-height: 310px;
-
-    position: relative;
-
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-}
-
-.project-number {
-    color: var(--terracotta-light);
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    margin-bottom: 45px;
-}
-
-.project-card h3 {
-    font-family: "Playfair Display", serif;
-
-    font-size: 26px;
-
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    color: #c7d0d4;
-
-    font-size: 14px;
-
-    margin-bottom: 30px;
-}
-
-.project-card > span {
-    position: absolute;
-
-    bottom: 30px;
-
-    left: 34px;
-
-    color: var(--blue);
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-
-/* ===============================
-   SKILLS
-================================ */
-
-.skills-section {
-    border-top: 1px solid var(--border);
-}
-
-.skills-layout {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
-}
-
-.skill-column {
-    background: white;
-
-    border: 1px solid var(--border);
-
-    padding: 35px;
-}
-
-.skill-column h3 {
-    font-family: "Playfair Display", serif;
-
-    font-size: 25px;
-
-    color: var(--navy);
-
-    margin-bottom: 25px;
-}
-
-.skill-tags {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-}
-
-.skill-tags span {
-    padding: 9px 13px;
-
-    background: var(--blue-light);
-
-    color: var(--navy);
-
-    font-size: 12px;
-
-    font-weight: 600;
-}
-
-
-/* ===============================
-   VISION
-================================ */
-
-.vision-section {
-    background: var(--cream);
-}
-
-.vision-box {
-    display: grid;
-
-    grid-template-columns: 100px 1fr;
-
-    gap: 45px;
-
-    background: white;
-
-    padding: 55px;
-
-    border-left: 5px solid var(--terracotta);
-
-    box-shadow: var(--shadow);
-}
-
-.vision-number {
-    font-family: "Playfair Display", serif;
-
-    font-size: 50px;
-
-    color: var(--terracotta);
-}
-
-.vision-content > span {
-    color: var(--terracotta);
-
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    font-weight: 700;
-}
-
-.vision-content h2 {
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(35px, 5vw, 55px);
-
-    line-height: 1.1;
-
-    color: var(--navy);
-
-    margin: 18px 0 25px;
-}
-
-.vision-content p {
-    color: var(--muted);
-
-    max-width: 760px;
-
-    margin-bottom: 16px;
-}
-
-
-/* ===============================
-   CONTACT
-================================ */
-
-.contact-section {
-    padding-bottom: 90px;
-}
-
-.contact-content {
-    display: grid;
-
-    grid-template-columns: 1fr 0.8fr;
-
-    gap: 90px;
-
-    align-items: start;
-}
-
-.contact-intro > span {
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    color: var(--terracotta);
-
-    font-weight: 700;
-}
-
-.contact-intro h2 {
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(40px, 5vw, 60px);
-
-    color: var(--navy);
-
-    line-height: 1.08;
-
-    margin: 20px 0;
-}
-
-.contact-intro em {
-    color: var(--terracotta);
-
-    font-style: normal;
-}
-
-.contact-intro p {
-    color: var(--muted);
-}
-
-.contact-details {
-    border-top: 1px solid var(--border);
-}
-
-.contact-item {
-    padding: 22px 0;
-
-    border-bottom: 1px solid var(--border);
-}
-
-.contact-item span {
-    display: block;
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-    color: var(--terracotta);
-
-    font-weight: 700;
-
-    margin-bottom: 6px;
-}
-
-.contact-item a {
-    color: var(--navy);
-
-    font-weight: 600;
-}
-
-.contact-item a:hover {
-    color: var(--terracotta);
-}
-
-.contact-item p {
-    color: var(--navy);
-    font-weight: 600;
-}
-
-
-/* ===============================
-   FOOTER
-================================ */
-
-footer {
-    background: var(--navy);
-
-    color: white;
-
-    padding: 35px 30px;
-}
-
-.footer-content {
-    max-width: 1180px;
-
-    margin: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
-}
-
-.footer-logo {
-    font-family: "Playfair Display", serif;
-
-    font-size: 28px;
-
-    color: var(--terracotta-light);
-}
-
-.footer-content p {
-    font-weight: 600;
-
-    margin-bottom: 2px;
-}
-
-.footer-content span {
-    color: #aebbc0;
-
-    font-size: 12px;
-}
-
-.footer-bottom {
-    max-width: 1180px;
-
-    margin: 25px auto 0;
-
-    padding-top: 20px;
-
-    border-top: 1px solid rgba(255,255,255,0.12);
-
-    display: flex;
-
-    justify-content: space-between;
-
-    color: #9eabb0;
-
-    font-size: 11px;
-}
-
-
-/* ===============================
-   RESPONSIVE
-================================ */
-
-@media (max-width: 850px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-
-        gap: 70px;
-
-        text-align: center;
-
-        padding-top: 65px;
-    }
-
-    .hero-text {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-photo {
-        order: -1;
-    }
-
-    .photo-frame {
-        width: 280px;
-        height: 360px;
-    }
-
-    .photo-note {
-        right: 5%;
-    }
-
-    .about-layout {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-    .identity-grid,
-    .research-grid,
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-layout {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-
-        gap: 50px;
-    }
-
-    .vision-box {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-        padding: 35px;
-    }
-
-}
-
-
-@media (max-width: 550px) {
-
-    .section {
-        padding: 75px 20px;
-    }
-
-    .hero {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .hero h1 {
-        font-size: 50px;
-    }
-
-    .photo-frame {
-        width: 240px;
-        height: 310px;
-    }
-
-    .photo-note {
-        position: relative;
-
-        right: auto;
-        bottom: auto;
-
-        margin-top: -25px;
-    }
-
-    .education-timeline {
-        margin-left: 0;
-    }
-
-    .education-item {
-        padding-left: 35px;
-    }
-
-    .education-card {
-        padding: 25px;
-    }
-
-    .education-top {
-        align-items: flex-start;
-
-        gap: 10px;
-    }
-
-    .statement-section {
-        padding: 75px 20px;
-    }
-
-    .footer-content,
-    .footer-bottom {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-}
+</body>
+</html>
